@@ -4,11 +4,11 @@
 
 	<groupId>org.vince</groupId>
 	<artifactId>immutable</artifactId>
-	<version>1.0</version>
+	<version>1.1-SNAPSHOT</version>
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/castelluci/immutable-java.git</developerConnection>
-	  <tag>immutable-1.0</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 	<properties>
