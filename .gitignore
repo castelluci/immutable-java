@@ -18,3 +18,5 @@ target/
 .idea/modules.xml
 .idea/vcs.xml
 .idea/workspace.xml
+pom.xml.releaseBackup
+release.properties
