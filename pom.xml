@@ -4,12 +4,23 @@
 
 	<groupId>org.vince</groupId>
 	<artifactId>immutable</artifactId>
-	<version>1.1-SNAPSHOT</version>
+	<version>1.2-SNAPSHOT</version>
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/castelluci/immutable-java.git</developerConnection>
-	  <tag>HEAD</tag>
-  </scm>
+		<tag>HEAD</tag>
+	</scm>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexusSnapshot</id>
+			<url>http://192.168.99.100:32776/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>nexusRelease</id>
+			<url>http://192.168.99.100:32776/nexus/content/repositories/releases/</url>
+		</repository>
+	</distributionManagement>
 
 	<properties>
 		<project.scm.id>github</project.scm.id>
