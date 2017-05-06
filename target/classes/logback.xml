@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<property resource="logger.properties" />
+
+	<appender name="IMMUTABLE" class="ch.qos.logback.core.FileAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+		</layout>
+		<file>${LOG_ROOT_PATH}/immutable.log</file>
+	</appender>
+
+	<logger name="org.vince" level="${LOG_LEVEL}" />
+
+	<root level="${LOG_LEVEL}">
+		<appender-ref ref="IMMUTABLE" />
+	</root>
+</configuration>
